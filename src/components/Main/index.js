@@ -1,73 +1,100 @@
 import React from "react";
-import TransactionCard from '../Transaction/index'
+import TransactionCard from "../Transaction/index";
 import SideNav from "../SideNav/index";
 import TrackRecord from "../trackRecord/index";
 
-
-import './main.css'
+import "./main.css";
 const MainContainer = () => {
-    return (
-      <section className="container">
-        <div className="containerBoxes  box1">
+  const bigChartUrl =
+    "https://res.cloudinary.com/evergreenx/image/upload/v1603661079/biggraph_eqcjmt.svg";
 
-        <SideNav/>
-        </div>
-        <div className="containerBoxes box2">
-          <div className="box2__topChart">
-            <div className="topChart--items">
-              <TransactionCard
-                transaction="Daily Transaction Volume"
-                figure="2,342"
-              />
-            </div>
-            <div className="topChart--items">
-              <TransactionCard
-                transaction="Daily Transaction Value"
-                figure="₦4,000,000"
-              />
-            </div>
-            <div className="topChart--items">
-              <TransactionCard
-                transaction="Total Transaction Volume"
-                figure="452,000"
-              />
-            </div>
-            <div className="topChart--items">
-              <TransactionCard
-                transaction="Daily Transaction Value"
-                figure="₦4,000,000"
-              />
-            </div>
+  const chartUrl =
+    "https://res.cloudinary.com/evergreenx/image/upload/v1603661079/chart_xh6can.svg";
+
+  return (
+    <section className="container">
+      <div className="containerBoxes  box1">
+        <SideNav />
+      </div>
+      <div className="containerBoxes box2">
+        <div className="box2__topChart">
+          <div className="topChart--items">
+            <TransactionCard
+              transaction="Daily Transaction Volume"
+              figure="2,342"
+            />
           </div>
-          <div className="chart">
-            <div className="chart__items chart--area">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo minus
-              eligendi dignissimos. Facilis officia dolores ut, eos esse, voluptas
-              repellat ab tenetur eaque ad maxime necessitatibus quam, expedita
-              quisquam commodi?
-            </div>
-            <div className="chart__items right-record">
-              <TrackRecord
-                heading="Orders"
-                textOne="Pending Orders:"
-                textTwo="Reconcilled Orders:"
-                textThree="Total Orders:"
-              />
-              <TrackRecord
-                heading="Payments"
-                textOne="Un-reconcilled Payments:"
-                textTwo="Reconcilled Payments:"
-                textThree="Total Payments:"
-              />
-            </div>
+          <div className="topChart--items">
+            <TransactionCard
+              transaction="Daily Transaction Value"
+              figure="₦4,000,000"
+            />
           </div>
-          <h2>Payments</h2>
-          <div className="table-data">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, neque vero velit atque tempora id rem beatae distinctio eos, modi cupiditate asperiores nobis accusantium esse nesciunt ea assumenda repudiandae commodi.
+          <div className="topChart--items">
+            <TransactionCard
+              transaction="Total Transaction Volume"
+              figure="452,000"
+            />
+          </div>
+          <div className="topChart--items">
+            <TransactionCard
+              transaction="Daily Transaction Value"
+              figure="₦4,000,000"
+            />
           </div>
         </div>
-      </section>
-    );
-  };
+        <div className="chart">
+          <div className="chart__items chart--area">
+            <div className="chart_data">
+              <span>Today: 5, Aug 2018</span>
 
-  export default MainContainer
+              <div className="dropdown">
+                <select>
+                  <option> 1 Jan - 1 Jun </option>
+                </select>
+
+                <button>&lt;</button>
+
+                <button>&gt;</button>
+              </div>
+            </div>
+
+            <div className="months">
+              <span>Jan</span>
+              <span>Feb</span>
+              <span>mar</span>
+              <span>Apr</span>
+              <span>may</span>
+
+              <span>jun</span>
+            </div>
+            <img src={bigChartUrl} alt="bigchart" />
+          </div>
+          <div className="chart__items right-record">
+            <TrackRecord
+              heading="Orders"
+              textOne="Pending Orders:"
+              textTwo="Reconcilled Orders:"
+              textThree="Total Orders:"
+            />
+            <TrackRecord
+              heading="Payments"
+              textOne="Un-reconcilled Payments:"
+              textTwo="Reconcilled Payments:"
+              textThree="Total Payments:"
+            />
+          </div>
+        </div>
+        <h2>Payments</h2>
+        <div className="table-data">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, neque
+          vero velit atque tempora id rem beatae distinctio eos, modi cupiditate
+          asperiores nobis accusantium esse nesciunt ea assumenda repudiandae
+          commodi.
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default MainContainer;

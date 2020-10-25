@@ -1,55 +1,112 @@
 .container {
-    display: flex;
-    // border: 2px solid red;
-    .containerBoxes {
-        flex: 1;
-        
-    }
-    .box1 {
+  display: flex;
+  // border: 2px solid red;
+  .containerBoxes {
+    flex: 1;
+  }
+  .box1 {
     max-width: 18%;
     height: 100vh;
     // border: 2px solid green;
+  }
+  .box2 {
+    padding: 0.4em 1.5em 0.3em 0.6em;
+    background: #e5e5e5;
+
+    .box2__topChart {
+      display: flex;
+      flex-wrap: wrap;
+
+      .topChart--items {
+        background: #fff;
+        margin: 0.5em;
+        flex: 1;
+      }
     }
-    .box2 {
-        padding: .4em 1.5em .3em .6em;
-        background: #E5E5E5;
 
-        .box2__topChart{
-            display: flex;
-            flex-wrap: wrap;
-           
-            .topChart--items{
-                background: #FFF;
-                margin: .5em;
-                flex: 1;
-            }
+    .chart {
+      display: flex;
+      margin-right: 0.5em;
+      margin-left: 0.4em;
+      .chart__items {
+        flex: 1;
+      }
+      .chart--area {
+        background: #fff;
+
+        img {
+          margin-top: 50px;
         }
+      }
 
-        .chart {
-            display: flex;
-            margin-right: .5em;
-            margin-left: .4em;
-            .chart__items {
-            flex: 1;
-
-            }
-            .chart--area {
-            background: #FFF;
-            }
-
-            .right-record {
-            max-width: 30%;
-            padding-left: .2em;
-            }
-        }
-         h2 {
-        color: #262626;
-        font-weight: 400;
+      .right-record {
+        max-width: 30%;
+        padding-left: 0.2em;
+      }
+    }
+    h2 {
+      color: #262626;
+      font-weight: 400;
     }
     .table-data {
-        display: flex;
-        border: 2px solid red;
+      display: flex;
+      border: 2px solid red;
     }
+  }
+}
+
+.chart_data {
+  padding-left: 12px;
+  display: flex;
+
+  //   justify-content: flex-end;
+  margin-top: 15px;
+
+  span {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+  }
+  .dropdown {
+    margin-left: 280px;
+
+    select {
+      height: 31px;
+      width: 138px;
+      border-radius: 4.25px;
+      margin-right: 23px;
+      border: 1px solid #cccfd4;
     }
+
+    button {
+      margin: 5px;
+      border-radius: 5px;
+      border: 1px solid #cccfd4;
+
+      height: 22.96837043762207px;
+      width: 29.362957000732422px;
+
+      font-size: 17px;
+
+      color: #cccfd4;
+ cursor:pointer;
+    }
+  }
+}
+
+.months{
+    display: flex;
+    justify-content:space-around;
+    margin-right: 20px;
+  position: relative;
+  top:70px;
    
+
+
+
+
+    span{
+        text-transform: capitalize;
+        font-weight: 700;
+    }
 }

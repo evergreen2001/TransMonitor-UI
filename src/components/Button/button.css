@@ -1,28 +1,26 @@
-button {
+.button_invoice {
   /* width: 12em;
   text-align: center;
   height: 2.3em; */
   background: #27ae60;
   border-radius: 3em;
- 
+
   color: #fff;
   margin-top: 2.5em;
-  margin-bottom:40px;
+  margin-bottom: 40px;
   margin-left: 1em;
- 
+
   cursor: pointer;
   border: none;
-  text-transform: uppercase;  
-  font-family: 'Roboto', sans-serif ;
-font-weight: 600;
-line-height: 14.06px;
-font-size:14px;
-width: 175px;
-height: 33px;
-
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  line-height: 14.06px;
+  font-size: 14px;
+  width: 175px;
+  height: 33px;
 }
-button:hover {
+.button_invoice:hover {
   background: #108a42;
-  transition: background .8s ease-in-out;
-
+  transition: background 0.8s ease-in-out;
 }
