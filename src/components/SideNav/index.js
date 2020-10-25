@@ -2,9 +2,6 @@ import React from "react";
 import Button from "../Button/index";
 
 import PersonOutlineIcon from "@material-ui/icons/PersonOutline";
-import RadioButtonCheckedIcon from "@material-ui/icons/RadioButtonChecked";
-import EventNoteIcon from "@material-ui/icons/EventNote";
-import SettingsInputSvideoIcon from "@material-ui/icons/SettingsInputSvideo";
 
 import "./sidenav.css";
 const Sidenav = () => {

@@ -11,8 +11,7 @@ const MainContainer = () => {
   const bigChartUrl =
     "https://res.cloudinary.com/evergreenx/image/upload/v1603661079/biggraph_eqcjmt.svg";
 
-  const chartUrl =
-    "https://res.cloudinary.com/evergreenx/image/upload/v1603661079/chart_xh6can.svg";
+ 
 
   return (
     <section className="container">
