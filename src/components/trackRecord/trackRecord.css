@@ -1,0 +1,55 @@
+.trackWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  background: #FFF;
+  color: #262626;
+  padding: 1em;
+  margin-bottom: .2em;
+}
+
+.trackWrap h4 {
+  line-height: 0.2;
+}
+
+.trackWrap .progressBar {
+  width: 14em;
+  height: 0.3em;
+  background: #27ae60;
+  border-radius: 0.2em;
+  position: relative;
+}
+
+.trackWrap .progressBar::before {
+  position: absolute;
+  right: 0;
+  content: '';
+  width: 5em;
+  height: 0.3em;
+  background: #fdc203;
+  border-radius: 0.2em;
+}
+
+.trackWrap p {
+  line-height: 0;
+}
+
+.trackWrap p .first {
+  font-weight: bold;
+  color: #fdc203;
+}
+
+.trackWrap p .second {
+  font-weight: bold;
+  color: #1a831a;
+}
+
+.trackWrap p .third {
+  font-weight: bold;
+  color: #0a0ab6;
+}
+/*# sourceMappingURL=trackRecord.css.map */

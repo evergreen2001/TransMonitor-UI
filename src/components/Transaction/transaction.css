@@ -1,0 +1,30 @@
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap .wrapItems {
+  margin: 0.6em;
+}
+
+.wrap .wrapItems h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 0.1;
+  color: #787c90;
+  font-size: .6em;
+}
+
+.wrap .wrapItems p {
+  color: #262626;
+  font-size: 1.3em;
+  line-height: 0.2;
+}
+
+.wrap .wrapItems img {
+  width: 4em;
+  height: 4em;
+}
+/*# sourceMappingURL=transaction.css.map */
