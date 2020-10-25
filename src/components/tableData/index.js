@@ -1,10 +1,36 @@
 import React from "react";
+
+//forminput import
+import InputBase from "@material-ui/core/InputBase";
+import SearchIcon from "@material-ui/icons/Search";
+
 import "./tabledata.css";
 
 const Tabledata = () => {
   return (
     <div>
-     
+      <div className="payment_top">
+        <form className="Form">
+          <div className="search">
+            <SearchIcon className="Icon" />
+            <InputBase
+              className="input_table"
+              placeholder="Search Payment..."
+            />
+          </div>
+          Show{" "}
+         
+          <div class="select-wrapper">
+            <select class="select">
+              <option>All</option>
+              <option>Reconcilled</option>
+              <option>Un-reconcilled</option>
+              <option>Settled</option>
+              <option>Unsettled</option>
+            </select>
+          </div>
+        </form>
+      </div>
       <table>
         <thead>
           <tr>
@@ -227,7 +253,6 @@ const Tabledata = () => {
               </div>
             </td>
           </tr>
-        
         </tbody>
       </table>
     </div>

@@ -1,9 +1,11 @@
 table {
-  width: 100%;
+  width: 130%;
   border-collapse: collapse;
   margin: 50px auto;
   overflow-x:auto;
   outline: none;
+  color: #414042;
+
 }
 
 
@@ -122,4 +124,52 @@ span{
 }
 
 
+  }
+
+
+
+
+
+  .payment_top{
+    
+  }
+  .Form {
+    display: flex;
+    flex: 1;
+    align-self: center;
+    height: 2.5em;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 50px;
+  
+    .Icon {
+      position: absolute;
+      color: #0e1d25;
+      top: 0.2em;
+    }
+  
+    .input_table {
+      margin-left: 2em;
+    border-bottom: 0.5px solid #787878;
+
+    }
+  }
+
+  .select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: white;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    font-size: 18px;
+    &:focus {
+      color: black;
+    }
+    // Hack for IE 11+
+    &::-ms-expand {
+      display: none;
+    }
   }
