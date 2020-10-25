@@ -8,6 +8,8 @@
           flex-flow: column wrap;
   color: #647787;
   background-color: #fff;
+  z-index: 9;
+  height: 179%;
 }
 
 .sideBarContainer h4 {

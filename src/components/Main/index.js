@@ -2,6 +2,9 @@ import React from "react";
 import TransactionCard from "../Transaction/index";
 import SideNav from "../SideNav/index";
 import TrackRecord from "../trackRecord/index";
+import TableData from "../tableData/index";
+
+
 
 import "./main.css";
 const MainContainer = () => {
@@ -87,10 +90,9 @@ const MainContainer = () => {
         </div>
         <h2>Payments</h2>
         <div className="table-data">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, neque
-          vero velit atque tempora id rem beatae distinctio eos, modi cupiditate
-          asperiores nobis accusantium esse nesciunt ea assumenda repudiandae
-          commodi.
+
+        <TableData/>
+      
         </div>
       </div>
     </section>
