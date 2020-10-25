@@ -1,0 +1,102 @@
+.headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
+          box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
+}
+
+.headerContainer .brand {
+  color: #1875f0;
+  font-style: normal;
+  font-weight: 900;
+  cursor: pointer;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  margin-left: 1.5em;
+}
+
+.headerContainer .flexEndItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.headerContainer .flexEndItems .Link {
+  color: #647787;
+  cursor: pointer;
+  margin-top: -.2em;
+}
+
+.headerContainer .flexEndItems .name {
+  color: #647787;
+  cursor: pointer;
+}
+
+.headerContainer .flexEndItems .name ul {
+  list-style-type: none;
+}
+
+.headerContainer .flexEndItems .name ul .first {
+  text-align: right;
+  font-size: 0.5em;
+}
+
+.headerContainer .flexEndItems .name ul .second {
+  font-size: 0.7em;
+}
+
+.headerContainer .flexEndItems .profilePicture {
+  background: url(../../logo.svg) no-repeat 100%;
+  display: block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: 1px solid red;
+  display: block;
+}
+
+/* form style */
+.Form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-item-align: center;
+      align-self: center;
+  height: 2.5em;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 50px;
+}
+
+.Form .Icon {
+  position: absolute;
+  color: #0e1d25;
+  top: 0.2em;
+}
+
+.Form .Input {
+  margin-left: 2em;
+}
+/*# sourceMappingURL=header.css.map */
