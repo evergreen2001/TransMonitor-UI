@@ -1,6 +1,7 @@
 .container {
   display: flex;
-  // border: 2px solid red;
+  font-family: 'Roboto', sans-serif ;
+ 
   .containerBoxes {
     flex: 1;
   }
@@ -42,6 +43,8 @@
       .right-record {
         max-width: 30%;
         padding-left: 0.2em;
+
+
       }
     }
     h2 {
@@ -50,7 +53,7 @@
     }
     .table-data {
       display: flex;
-      border: 2px solid red;
+     
     }
   }
 }
@@ -59,7 +62,7 @@
   padding-left: 12px;
   display: flex;
 
-  //   justify-content: flex-end;
+  font-size:14px;
   margin-top: 15px;
 
   span {

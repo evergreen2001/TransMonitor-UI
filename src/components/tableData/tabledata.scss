@@ -1,28 +1,25 @@
 table {
   width: 130%;
   border-collapse: collapse;
-  margin: 50px auto;
-  overflow-x:auto;
+  margin: 20px auto;
+  overflow-x: auto;
   outline: none;
   color: #414042;
-
 }
-
 
 tr:nth-of-type(odd) {
   background: #eee;
 }
 
 table td {
-    border-bottom: 1px solid #CCCFD4; 
-  }
+  border-bottom: 1px solid #cccfd4;
+}
 
 th {
-  background: #EAEEF0;
-  color: #7F8FA4;
+  background: #eaeef0;
+  color: #7f8fa4;
   font-weight: bold;
-  font-size:14px;
-  
+  font-size: 14px;
 }
 
 td,
@@ -32,144 +29,176 @@ th {
   font-size: 14px;
 }
 
-td{
+td {
   background-color: #fff;
-
 }
 
-
-
-
- 
 .circle {
-    position: relative;
-    width: 32px;
-    height: 32px;
-    padding: 1% 0;
-    margin:  auto;
-    border-radius: 50%;
-    background: #7F8FA4;
-  }
-  
-  .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-  }
-  .content:before {
-    content: '';
-    vertical-align: middle;
-    display: inline-block;
-    width: 0;
-    height: 100%;
-  }
-  
-  .content span {
-    font-size:12px;
-    color:#fff;
-  }
+  position: relative;
+  width: 32px;
+  height: 32px;
+  padding: 1% 0;
+  margin: auto;
+  border-radius: 50%;
+  background: #7f8fa4;
+}
 
-  .status{
-   width: 120px;
- height :33px;
- border-radius: 30px;
- border: 1px solid #CCCFD4;
- display:flex;
- justify-content: space-around;
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.content:before {
+  content: "";
+  vertical-align: middle;
+  display: inline-block;
+  width: 0;
+  height: 100%;
+}
 
-span{
-    margin-top:8px;
+.content span {
+  font-size: 12px;
+  color: #fff;
+}
+
+.status {
+  width: 120px;
+  height: 33px;
+  border-radius: 30px;
+  border: 1px solid #cccfd4;
+  display: flex;
+  justify-content: space-around;
+
+  span {
+    margin-top: 8px;
     text-transform: capitalize;
-    color: #27AE60;
-
-
-}
- .icon{
-     border-radius:30px;
-     width: 9px;
-     height: 9px;
-     background: #27AE60;
-     margin-top:11px;
-
-
- }
-.icon_orange{
-    background:#EBC315;
+    color: #27ae60;
+  }
+  .icon {
+    border-radius: 30px;
     width: 9px;
     height: 9px;
-    margin-top:11px;
-    border-radius:30px;
-
-}
-
-.text_orange{
-    color:#EBC315;
-}
-
-
-.icon_grey{
-    background:#7F8FA4;
+    background: #27ae60;
+    margin-top: 11px;
+  }
+  .icon_orange {
+    background: #ebc315;
     width: 9px;
     height: 9px;
-    margin-top:11px;
-    border-radius:30px;
-
-}
-.text_grey{
-    color:#7F8FA4
-;
-}
-
-
+    margin-top: 11px;
+    border-radius: 30px;
   }
 
-
-
-
-
-  .payment_top{
-    
+  .text_orange {
+    color: #ebc315;
   }
-  .Form {
-    display: flex;
-    flex: 1;
-    align-self: center;
-    height: 2.5em;
-    position: relative;
-    margin-top: 15px;
-    margin-left: 50px;
-  
-    .Icon {
-      position: absolute;
-      color: #0e1d25;
-      top: 0.2em;
-    }
-  
-    .input_table {
-      margin-left: 2em;
+
+  .icon_grey {
+    background: #7f8fa4;
+    width: 9px;
+    height: 9px;
+    margin-top: 11px;
+    border-radius: 30px;
+  }
+  .text_grey {
+    color: #7f8fa4;
+  }
+}
+
+.payment_top {
+  display: flex;
+
+  justify-content: space-between;
+
+  span {
+    margin-top: 30px;
+    padding: 10px;
+  }
+}
+.Form {
+  display: flex;
+  flex: 1;
+  align-self: center;
+  height: 2.5em;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 50px;
+
+  .Icon {
+    position: absolute;
+    color: #0e1d25;
+    top: 0.2em;
+  }
+
+  .input_table {
+    margin-left: 2em;
     border-bottom: 0.5px solid #787878;
-
-    }
   }
+}
 
-  .select {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    background: white;
-    border: none;
-    border-radius: 0;
-    cursor: pointer;
-    padding: 12px;
-    width: 100%;
-    font-size: 18px;
-    &:focus {
-      color: black;
-    }
-    // Hack for IE 11+
-    &::-ms-expand {
-      display: none;
-    }
+.select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: white;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  font-size: 18px;
+  &:focus {
+    color: black;
   }
+  // Hack for IE 11+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+//pagination
+
+.pagination {
+  // display: inline-block;
+  margin-left: 99px;
+
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  font-size:13px;
+}
+
+.pagination a.active {
+  background-color: #1875F0;
+  color: white;
+  border: 1px solid #1875F0;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.pagination_content{
+  display:flex;
+  justify-content: space-around;
+  margin-left: 80px;
+  
+  
+  h3{
+    font-size: 13px;
+  }
+}

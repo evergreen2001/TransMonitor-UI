@@ -9,7 +9,20 @@ import "./tabledata.css";
 const Tabledata = () => {
   return (
     <div>
+
+
       <div className="payment_top">
+      <span>showing 20
+         <svg
+          width="9"
+          height="6"
+          viewBox="0 0 9 6"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        > 
+          <path d="M8 1L4.5 5L1 1" stroke="#1875F0" />
+        </svg>
+          out of 500 Payment</span>
         <form className="Form">
           <div className="search">
             <SearchIcon className="Icon" />
@@ -18,18 +31,18 @@ const Tabledata = () => {
               placeholder="Search Payment..."
             />
           </div>
-          Show{" "}
-         
-          <div class="select-wrapper">
-            <select class="select">
-              <option>All</option>
-              <option>Reconcilled</option>
-              <option>Un-reconcilled</option>
-              <option>Settled</option>
-              <option>Unsettled</option>
-            </select>
-          </div>
         </form>
+        
+        <div class="select-wrapper">
+          Show
+          <select class="select">
+            <option>All</option>
+            <option>Reconcilled</option>
+            <option>Un-reconcilled</option>
+            <option>Settled</option>
+            <option>Unsettled</option>
+          </select>
+        </div>
       </div>
       <table>
         <thead>
@@ -255,7 +268,27 @@ const Tabledata = () => {
           </tr>
         </tbody>
       </table>
-    </div>
+
+      <div className="pagination_content">
+
+
+<h3>
+
+Showing 1 to 10 of 500 entries
+</h3>
+
+
+<div className="pagination">
+  <a href="#">Previoius</a>
+  <a href="#" className="active">1</a>
+  <a  href="#">2</a>
+  
+ 
+  <a href="#">Next</a>
+</div>
+        </div>
+      </div>
+  
   );
 };
 
